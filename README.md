@@ -9,7 +9,7 @@ This package provides [Vkontakte](https://vk.com) integration for [OAuth2 Client
 ## Installation
 
 ```sh
-composer require zablik/oauth2-vkontakte
+composer require exitinvim/oauth2-vk
 ```
 ## Versions
 
