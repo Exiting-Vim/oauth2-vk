@@ -1,5 +1,5 @@
 {
-    "name": "zablik/oauth2-vkontakte",
+    "name": "exitingVim/oauth2-vk",
     "description": "Vkontakte provider for league/oauth2-client",
     "keywords": [
         "league",
@@ -7,6 +7,11 @@
     ],
     "license": "MIT",
     "authors": [
+        {
+            "name": "Shahboz Mirbadiev",
+            "email": "shahboz.100@yandex.ru",
+            "homepage": "https://exitingvim.ru"
+        },
         {
             "name": "Jack Wall",
             "email": "jw@jack.gd"

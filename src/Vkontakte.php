@@ -219,8 +219,10 @@ class Vkontakte extends AbstractProvider
         $query   = $this->buildQueryString($params);
         $url     = "$this->baseUri/users.get?$query";
 
-        $response   = $this->getResponse($this->createRequest(static::METHOD_GET, $url, $token, []))['response'];
-        $users      = !empty($response['items']) ? $response['items'] : $response;
+        $request = $this->createRequest(static::METHOD_GET, $url, $token, []);
+        $response   = $this->getResponse($request);
+        $response = json_decode($response->getBody()->getContents(), true);
+        $users      = !empty($response['response']) ? $response['response'] : $response;
         $array2user = function ($userData) {
             return new VkontakteUser($userData);
         };
