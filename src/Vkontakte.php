@@ -105,7 +105,7 @@ class Vkontakte extends AbstractProvider
         //'schools',
         //'site',
         //'status',
-        //'timezone',
+        'timezone',
         //'tv',
         //'universities',
         //'verified',
